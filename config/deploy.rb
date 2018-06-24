@@ -2,7 +2,7 @@
 lock '3.11.0'
 
 set :application, 'airbnb'
-set :repo_url,  'git@github.com:bambis13/airbnb.git'
+set :repo_url,  'git@github.com:satoshi0314/airbnb.git'
 set :pty, true
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
@@ -12,7 +12,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.3.1'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['/Users/akari.s/.ssh/airbnb.pem']
+                  keys: ['/Users/satoshi/.ssh/sekikawasatoshi.pem']
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
