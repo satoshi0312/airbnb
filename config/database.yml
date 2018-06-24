@@ -50,7 +50,7 @@ test:
 production:
   <<: *default
   database: airbnb_production
-  username: ec2-user
+  username: airbnb
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
 
